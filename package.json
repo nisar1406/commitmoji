@@ -1,0 +1,47 @@
+{
+  "name": "commitmoji",
+  "version": "1.0.0",
+  "description": "Commitizen adapter formats for emoji-enhanced conventional commits.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nisar1406/commitmoji.git"
+  },
+  "keywords": [
+    "emoji",
+    "commitizen",
+    "git",
+    "commit",
+    "conventional commit"
+  ],
+  "author": "Nisar Shaikh",
+  "license": "MIT",
+  "bin": {
+    "test": "./index.js"
+  },
+  "homepage": "https://github.com/nisar1406/commitmoji#readme",
+  "config": {
+    "commitizen": {
+      "path": "./index.js"
+    }
+  },
+  "files": [
+    "index.js",
+    "constants/emoji.json",
+    "constants/types.json"
+  ],
+  "dependencies": {
+    "cli-truncate": "^1.0.0",
+    "find-up": "^5.0.0",
+    "fuse.js": "^3.4.5",
+    "inquirer-autocomplete-prompt": "^0.12.0",
+    "inquirer-maxlength-input-prompt": "^1.0.1",
+    "pad": "^2.3.0",
+    "prettier": "^3.2.5",
+    "read-pkg-up": "^7.0.1",
+    "wrap-ansi": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=14.17.6"
+  }
+}
